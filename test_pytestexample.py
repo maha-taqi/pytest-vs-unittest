@@ -1,6 +1,6 @@
 import pytest
 import mock
-from quiz import Question, run_quiz, questions
+from quiz import run_quiz, questions
 import builtins
 
 
@@ -16,7 +16,7 @@ def test_run_quiz_with_no_answers():
 
 
 def test_run_quiz_with_correct_answers():
-    # Mock user input to simulate correct provided
+    # Mock user input to simulate the correct answer provided
     input_values = iter(['c', 'a', 'b'])
     def mock_input(s):
         return next(input_values)
@@ -36,7 +36,7 @@ def test_run_quiz_with_incorrect_answers():
 
 
 def test_run_quiz_with_incorrect_input():
-    # Mock user input to simulate wrong type
+    # Mock user input to simulate the wrong type
     input_values = iter(['y', 'x', 'z'])
 
     def mock_input(s):
