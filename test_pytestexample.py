@@ -16,7 +16,7 @@ def test_run_quiz_with_no_answers():
 
 
 def test_run_quiz_with_correct_answers():
-    # Mock user input to simulate the correct answer provided
+    # Mock user input to simulate correct answers provided
     input_values = iter(['c', 'a', 'b'])
     def mock_input(s):
         return next(input_values)
