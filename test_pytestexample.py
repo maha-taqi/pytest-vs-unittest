@@ -1,5 +1,5 @@
 import pytest
-import mock
+from unittest import mock
 from quiz import run_quiz, questions
 import builtins
 
