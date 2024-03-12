@@ -1,7 +1,7 @@
 import unittest
 from unittest import mock
 import builtins
-from quiz import Question, run_quiz, questions
+from quiz import run_quiz, questions
 
 class Test(unittest.TestCase):
     def test_run_quiz_with_no_answers(self):
@@ -16,7 +16,7 @@ class Test(unittest.TestCase):
 
 
     def test_run_quiz_with_all_correct_answers(self):
-        # Simulate no answers provided by the user
+        # Simulate correct answers provided by the user
         input_values = iter(['c', 'a', 'b'])
 
         def mock_input(s):
